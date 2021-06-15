@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Raleway:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+.card {
+  @apply h-64 rounded-2xl relative p-8 flex flex-col justify-center bg-cover bg-center bg-blend-screen;
+}
+
+.free-shipping {
+  @apply bg-secondary-default;
+  background-image: url('https://images.unsplash.com/photo-1449247666642-264389f5f5b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=350&q=80');
+}
+
+.our-products {
+  @apply bg-primary-default;
+  background-image: url('https://images.unsplash.com/photo-1515688594390-b649af70d282?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=350&q=80');
+}
+
+.news {
+  @apply bg-primary-default;
+  background-image: url('https://images.unsplash.com/photo-1585049303349-6680e6179692?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=350&q=80');
+}
+
+.cta {
+  @apply h-80 rounded-2xl relative p-8 flex flex-col justify-center items-center bg-cover bg-center bg-blend-multiply text-white;
+}
+
+.gift-card {
+  @apply bg-black bg-opacity-50;
+  background-image: url('https://images.unsplash.com/photo-1549116917-bccf55924737?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');
+}
+
+.subscribe {
+  @apply bg-black bg-opacity-50;
+  background-image: url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80');
+}
+
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-5xl;
+  }
+  h3 {
+    @apply text-4xl;
+  }
+  h4 {
+    @apply text-3xl;
+  }
+  h5 {
+    @apply text-2xl;
+  }
+  h6 {
+    @apply text-xl;
+  }
+}
