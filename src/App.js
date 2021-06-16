@@ -5,6 +5,7 @@ import Footer from './Components/Footer';
 
 import About from './Pages/About';
 import Home from './Pages/Home';
+import ProductDetails from './Pages/ProductDetails';
 import AllProducts from './Pages/AllProducts';
 import Terms from './Pages/Terms';
 
@@ -16,7 +17,7 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
         <Route path='/products' exact component={AllProducts} />
-        {/* <Route path='/products/:id' component={ProductDetails} /> */}
+        <Route path='/products/:id' component={ProductDetails} />
         <Route path='/terms' exact component={Terms} />
       </Switch>
       <Footer />

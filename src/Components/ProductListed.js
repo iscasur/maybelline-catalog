@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function ProductListed() {
   useEffect(() => {
@@ -58,22 +59,24 @@ function ProductListed() {
 
   return (
     <>
-      <section className='container mx-auto py-12 grid grid-cols-3 gap-5'>
+      <section className='container mx-auto py-12 grid grid-cols-3 gap-10'>
         <div>
           <div className='font-heading text-3xl mb-8'>New products</div>
           <ul>
             {newProducts.map((item) => (
-              <li key={item.id} className='mb-5'>
-                <article className='grid grid-cols-4 gap-5 items-center'>
-                  <section className='col-span-1'>
-                    <img src={item.image_link} alt={item.name} />
-                  </section>
-                  <section className='col-span-3'>
-                    <div className='font-semibold'>{item.name}</div>
-                    <div>$ {item.price}</div>
-                  </section>
-                </article>
-              </li>
+              <Link to={`/products/${item.id}`} title={item.name}>
+                <li key={item.id} className='mb-5'>
+                  <article className='grid grid-cols-4 gap-5 items-center'>
+                    <section className='col-span-1'>
+                      <img src={item.image_link} alt={item.name} />
+                    </section>
+                    <section className='col-span-3'>
+                      <div className='font-semibold'>{item.name}</div>
+                      <div>$ {item.price}</div>
+                    </section>
+                  </article>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -81,17 +84,19 @@ function ProductListed() {
           <div className='font-heading text-3xl mb-8'>Featured products</div>
           <ul>
             {featuredProducts.map((item) => (
-              <li key={item.id} className='mb-5'>
-                <article className='grid grid-cols-4 gap-5 items-center'>
-                  <section className='col-span-1'>
-                    <img src={item.image_link} alt={item.name} />
-                  </section>
-                  <section className='col-span-3'>
-                    <div className='font-semibold'>{item.name}</div>
-                    <div>$ {item.price}</div>
-                  </section>
-                </article>
-              </li>
+              <Link to={`/products/${item.id}`} title={item.name}>
+                <li key={item.id} className='mb-5'>
+                  <article className='grid grid-cols-4 gap-5 items-center'>
+                    <section className='col-span-1'>
+                      <img src={item.image_link} alt={item.name} />
+                    </section>
+                    <section className='col-span-3'>
+                      <div className='font-semibold'>{item.name}</div>
+                      <div>$ {item.price}</div>
+                    </section>
+                  </article>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -99,17 +104,19 @@ function ProductListed() {
           <div className='font-heading text-3xl mb-8'>Top sale</div>
           <ul>
             {topProducts.map((item) => (
-              <li key={item.id} className='mb-5'>
-                <article className='grid grid-cols-4 gap-5 items-center'>
-                  <section className='col-span-1'>
-                    <img src={item.image_link} alt={item.name} />
-                  </section>
-                  <section className='col-span-3'>
-                    <div className='font-semibold'>{item.name}</div>
-                    <div>$ {item.price}</div>
-                  </section>
-                </article>
-              </li>
+              <Link to={`/products/${item.id}`} title={item.name}>
+                <li key={item.id} className='mb-5'>
+                  <article className='grid grid-cols-4 gap-5 items-center'>
+                    <section className='col-span-1'>
+                      <img src={item.image_link} alt={item.name} />
+                    </section>
+                    <section className='col-span-3'>
+                      <div className='font-semibold'>{item.name}</div>
+                      <div>$ {item.price}</div>
+                    </section>
+                  </article>
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
