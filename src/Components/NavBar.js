@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 
 function Nav() {
@@ -6,9 +7,11 @@ function Nav() {
     <>
       <header className='container mx-auto'>
         <nav className='flex justify-between content-center py-4'>
-          <h3 className='text-3xl font-semibold tracking-wide self-center'>
-            Maybelline
-          </h3>
+          <Link to='/'>
+            <h3 className='text-3xl font-semibold tracking-wide self-center'>
+              Maybelline
+            </h3>
+          </Link>
           <section className='flex items-center'>
             <div className='font-bold mr-8'>
               <a href='tel:+528001234567'>(800)123-4567</a>

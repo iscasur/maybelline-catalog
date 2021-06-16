@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import CTA from '../Components/CTA';
 
-function Products() {
+function AllProducts() {
   useEffect(() => {
     fetchItems();
   }, []);
@@ -13,13 +14,7 @@ function Products() {
     );
     const items = await data.json();
 
-    const firstItems = [];
-
-    for (let i = 0; i < 12; i++) {
-      firstItems.push(items[i]);
-    }
-
-    setItems(firstItems);
+    setItems(items);
   };
   return (
     <>
@@ -45,8 +40,9 @@ function Products() {
           ))}
         </section>
       </main>
+      <CTA />
     </>
   );
 }
 
-export default Products;
+export default AllProducts;
