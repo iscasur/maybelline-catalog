@@ -23,8 +23,14 @@ function Products() {
   };
   return (
     <>
-      <main className='container mx-auto py-12 '>
-        <h2>Our Products</h2>
+      <main className='relative container mx-auto py-12 '>
+        <header className='flex justify-between items-center'>
+          <h2>Our Products</h2>
+          <div className=''>
+            <button className='btn mr-4 active '>All</button>
+            <button className='btn'>Best rated</button>
+          </div>
+        </header>
         <section className='grid grid-cols-4 gap-5'>
           {items.map((item) => (
             <article

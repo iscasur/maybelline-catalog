@@ -5,7 +5,7 @@ function Footer() {
     <>
       <footer className='container mx-auto py-12 px-16 grid grid-cols-2 gap-5 bg-gray-default rounded-t-2xl'>
         <section>
-          <h5 className='mb-6'>Maybelline</h5>
+          <div className='font-heading text-2xl mb-6'>Maybelline</div>
           <p className='text-sm'>
             305 Evergreen Av. <br />
             New York, 48110 <br />
@@ -15,7 +15,7 @@ function Footer() {
         <section>
           <nav className='grid grid-cols-3 gap-3'>
             <div>
-              <h6 className='mb-6'>Follow us</h6>
+              <div className='font-heading text-xl mb-6'>Follow us</div>
               <ul className='leading-loose'>
                 <li>Twitter</li>
                 <li>Instagram</li>
@@ -23,7 +23,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h6 className='mb-6'>Product</h6>
+              <div className='font-heading text-xl mb-6'>Product</div>
               <ul className='leading-loose'>
                 <li>FAQ</li>
                 <li>Terms and conditions</li>
@@ -31,7 +31,7 @@ function Footer() {
               </ul>
             </div>
             <div>
-              <h6 className='mb-6'>Abour us</h6>
+              <div className='font-heading text-xl mb-6'>About us</div>
               <ul className='leading-loose'>
                 <li>Careers</li>
                 <li>Contact</li>

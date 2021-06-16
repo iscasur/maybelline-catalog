@@ -5,25 +5,43 @@ function Cards() {
     <>
       <aside className='container mx-auto py-12 grid grid-cols-3 gap-5'>
         <section className='card free-shipping'>
-          <h4>Free shipping</h4>
-          <p>For all order over $100</p>
-          <a className='underline absolute bottom-8' href='/free-shipping'>
-            Learn more
-          </a>
+          <div className='font-heading text-3xl'>Free shipping</div>
+          <div>For all order over $100</div>
+          <div className='absolute bottom-8'>
+            <a
+              className='underline'
+              title='Learn more about free shipping'
+              href='/free-shipping'
+            >
+              Learn more
+            </a>
+          </div>
         </section>
         <section className='card our-products'>
-          <h4>Our products</h4>
-          <p>See all our products</p>
-          <a className='underline absolute bottom-8' href='/our-products'>
-            Learn more
-          </a>
+          <div className='font-heading text-3xl'>Our products</div>
+          <div>See all our products</div>
+          <div className='absolute bottom-8'>
+            <a
+              className='underline'
+              title='Learn more about our products'
+              href='/our-products'
+            >
+              Learn more
+            </a>
+          </div>
         </section>
         <section className='card news'>
-          <h4>What’s News</h4>
-          <p>Shop our new arrivals</p>
-          <a className='underline absolute bottom-8' href='news'>
-            Learn more
-          </a>
+          <div className='font-heading text-3xl'>What’s News</div>
+          <div>Shop our new arrivals</div>
+          <div className='absolute bottom-8'>
+            <a
+              className='underline'
+              title="Learn more about what's news"
+              href='news'
+            >
+              Learn more
+            </a>
+          </div>
         </section>
       </aside>
     </>
