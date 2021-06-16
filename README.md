@@ -18,6 +18,7 @@ You can see it alive [here](https://maybelline.netlify.app/).
 
 - React.js ⚛
 - Tailwind CSS 🌬
+- Figma 🎨
 
 ## Getting started
 
@@ -33,7 +34,7 @@ git clone https://github.com/iscasur/maybelline-catalog.git
 2. Go to the project's folder
 
 ```bash
-cd netflix-clone
+cd maybelline-catalog
 ```
 
 3. Install
@@ -47,6 +48,10 @@ npm install
 ```bash
 npm run dev
 ```
+
+## Resources
+
+- [Foundations](https://www.figma.com/file/p1Of6xcBvKf1UWg8RqAHpq/maybelline_cosmetics?node-id=0%3A1)
 
 ## Licence
 
