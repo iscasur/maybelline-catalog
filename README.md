@@ -18,6 +18,7 @@ You can see it alive [here](https://maybelline.netlify.app/).
 
 - React.js ⚛
 - Tailwind CSS 🌬
+- Netlify 🌐
 - Figma 🎨
 
 ## Getting started
