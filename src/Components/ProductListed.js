@@ -64,8 +64,8 @@ function ProductListed() {
           <div className='font-heading text-3xl mb-8'>New products</div>
           <ul>
             {newProducts.map((item) => (
-              <Link to={`/products/${item.id}`} title={item.name}>
-                <li key={item.id} className='mb-5'>
+              <li key={item.id} className='mb-5'>
+                <Link to={`/products/${item.id}`} title={item.name}>
                   <article className='grid grid-cols-4 gap-5 items-center'>
                     <section className='col-span-1'>
                       <img src={item.image_link} alt={item.name} />
@@ -75,8 +75,8 @@ function ProductListed() {
                       <div>$ {item.price}</div>
                     </section>
                   </article>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -84,8 +84,8 @@ function ProductListed() {
           <div className='font-heading text-3xl mb-8'>Featured products</div>
           <ul>
             {featuredProducts.map((item) => (
-              <Link to={`/products/${item.id}`} title={item.name}>
-                <li key={item.id} className='mb-5'>
+              <li key={item.id} className='mb-5'>
+                <Link to={`/products/${item.id}`} title={item.name}>
                   <article className='grid grid-cols-4 gap-5 items-center'>
                     <section className='col-span-1'>
                       <img src={item.image_link} alt={item.name} />
@@ -95,8 +95,8 @@ function ProductListed() {
                       <div>$ {item.price}</div>
                     </section>
                   </article>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -104,8 +104,8 @@ function ProductListed() {
           <div className='font-heading text-3xl mb-8'>Top sale</div>
           <ul>
             {topProducts.map((item) => (
-              <Link to={`/products/${item.id}`} title={item.name}>
-                <li key={item.id} className='mb-5'>
+              <li key={item.id} className='mb-5'>
+                <Link to={`/products/${item.id}`} title={item.name}>
                   <article className='grid grid-cols-4 gap-5 items-center'>
                     <section className='col-span-1'>
                       <img src={item.image_link} alt={item.name} />
@@ -115,8 +115,8 @@ function ProductListed() {
                       <div>$ {item.price}</div>
                     </section>
                   </article>
-                </li>
-              </Link>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

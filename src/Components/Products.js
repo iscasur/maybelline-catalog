@@ -34,16 +34,20 @@ function Products() {
         </header>
         <section className='grid grid-cols-4 gap-5'>
           {items.map((item) => (
-            <Link to={`/products/${item.id}`} title={item.name}>
-              <article
-                key={item.id}
-                className='flex flex-col h-80 rounded-2xl hover:shadow-lg items-center justify-center text-center p-5'
+            <article
+              key={item.id}
+              className='h-80 rounded-2xl hover:shadow-lg p-5'
+            >
+              <Link
+                to={`/products/${item.id}`}
+                title={item.name}
+                className='flex flex-col items-center justify-center text-center '
               >
                 <img src={item.image_link} alt={item.name} />
                 <div className='font-semibold mb-4'>{item.name}</div>
                 <div className='text-xl'>$ {item.price}</div>
-              </article>
-            </Link>
+              </Link>
+            </article>
           ))}
         </section>
       </main>

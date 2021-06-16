@@ -13,7 +13,7 @@ function Item({ match }) {
 
       const color = item.product_colors;
 
-      console.log(color);
+      console.log(Object.values(color));
 
       setItem(item);
     }
