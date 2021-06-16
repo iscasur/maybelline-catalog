@@ -12,7 +12,7 @@ function ProductListed() {
   const [topProducts, setTopProducts] = useState([]);
 
   const API_URL =
-    'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
+    'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline';
 
   const fetchNewProducts = async () => {
     const data = await fetch(API_URL);

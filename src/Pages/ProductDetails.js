@@ -7,7 +7,7 @@ function Item({ match }) {
   useEffect(() => {
     async function fetchItem() {
       const data = await fetch(
-        `http://makeup-api.herokuapp.com/api/v1/products/${match.params.id}.json`
+        `https://makeup-api.herokuapp.com/api/v1/products/${match.params.id}.json`
       );
       const item = await data.json();
 

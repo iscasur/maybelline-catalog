@@ -10,7 +10,7 @@ function Products() {
 
   const fetchItems = async () => {
     const data = await fetch(
-      'http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
+      'https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline'
     );
     const items = await data.json();
 
